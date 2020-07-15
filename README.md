@@ -1,3 +1,3 @@
 # it-inc
 Жк Лунное море
-http://remarkable-afternoon11.surge.sh/
+http://smelly-tank11.surge.sh/
