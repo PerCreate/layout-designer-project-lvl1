@@ -7,14 +7,14 @@ body {
 
 /*Header */
 
-header {
-
+header.fixed-menu {
     display: flex;
     align-items: center;
     font-weight: 600;
+    width: 100%;
     height: 65px;
     padding: 5px 10px;
-   
+    position: fixed;
 }
 
 header img {
@@ -22,13 +22,12 @@ header img {
     height: 30px;
 }
 
-nav {
+.fixed-line {
     margin: -10px 0 0 -10px;
     background-color: white;
     width: 100%;
     padding: 0 0 0 10px;
     height: 65px;
-    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,21 +43,32 @@ nav {
 }
 
 
-.menu ul {
+nav ul {
     padding: 0 20px 0 0;
     display: flex;
-    width: 500px;
+    width: 400px;
     align-items: center;
-
+    justify-content: space-between;
 }
 
-.menu ul li {
+nav ul li {
     list-style-type: none;
-    flex:1 1 30%;
     text-align: center;
 }
 
-.menu ul li a {
+nav ul li:nth-child(1){
+    flex: 0 1 120px;
+}
+
+nav ul li:nth-child(2){
+    flex: 0 1 120px;
+}
+
+nav ul li:nth-child(3){
+    flex: 0 1 180px;
+}
+
+nav ul li a {
     text-decoration: none;
     color: black;
 }
@@ -71,12 +81,10 @@ main {
     align-items: center;
 }
 
-/*First block*/
+/*Block with moon bg*/
 
-/*First block with moon bg*/
-
-main .first-block {
-    margin-top: -16.5px;
+main .block-with-moon-bg {
+    margin-top: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,19 +99,19 @@ main .first-block {
     background-size: 100%;
 }
 
-main .first-block img {
+main .block-with-moon-bg img {
     height: 150px;
 }
 
-main .first-block span {
+main .block-with-moon-bg span {
     display: block;
 }
 
-main .first-block .Zagolovok {
-    font:700 38px Arial;
+main .block-with-moon-bg span h1 {
+    font-size: 40px;
 }
 
-main .first-block a {
+main .block-with-moon-bg a {
     display: block;
     margin-top: 10px;
     padding: 1px 8px 1px 8px;
@@ -115,14 +123,14 @@ main .first-block a {
     color: white;
 }
 
-main .first-block a:hover {
+main .block-with-moon-bg a:hover {
     background-color: rgba(110, 124, 124, 0.61);
     transition: 0.2s ;
 }
 
-/*Second block with three inline benefits*/
+/*Block with three inline benefits*/
 
-main .second-block {
+main .block-with-three-inline-benefits {
     margin:100px 0 0 0  ;
     padding: 0;
     width:1000px;
@@ -130,47 +138,47 @@ main .second-block {
     justify-content: space-between;
 }
 
-main .second-block .blocks-benefits {
+main .block-with-three-inline-benefits .blocks-benefits {
     line-height: 30px;
     text-align: left;
     flex: 1 1 33%;
 }
 
-main .second-block .blocks-benefits h2 {
+main .block-with-three-inline-benefits .blocks-benefits h2 {
     font-size: 30px;
 } 
 
-main .second-block .blocks-benefits span {
+main .block-with-three-inline-benefits .blocks-benefits span {
     display: block;
     text-align: left;
     width: 80%;
 }
 
-/*Third block two benefits with pictures*/
+/*Block two benefits with pictures*/
 
-main .third-block{
+main .block-two-benefits-with-pictures{
     width: 1000px;
     margin: 150px 25% 0 25%;
 }
 
-main .third-block h2 {
+main .block-two-benefits-with-pictures h2 {
     font-size: 30px;
 }
 
-main .third-block img.first {
+main .block-two-benefits-with-pictures img.first {
     display: block;
     height: 200px;
     float: right;
 }
 
-main .third-block span.first {
+main .block-two-benefits-with-pictures span.first {
     line-height: 30px;
     display: block;
     text-align: left;
     width: 55%;
 }
 
-main .third-block img.second {
+main .block-two-benefits-with-pictures img.second {
     margin-right: 10%;
     display: block;
     height: 220px;
@@ -178,7 +186,7 @@ main .third-block img.second {
 }
 
 
-main .third-block span.second{
+main .block-two-benefits-with-pictures span.second{
     line-height: 30px;
     display: block;
     text-align: left;
@@ -186,19 +194,19 @@ main .third-block span.second{
     float: right;
 }
 
-/*Forth block with inputs and button*/
+/*Block with inputs and button*/
 
-main .forth-block {
+main .block-with-inputs-and-button {
     margin-top: 10%;
     width: 500px;
 }
 
-main .forth-block h2 {
+main .block-with-inputs-and-button h2 {
     padding: 0 55px;
     font-size: 30px;
 }
 
-main .forth-block fieldset {
+main .block-with-inputs-and-button fieldset {
     margin-bottom: 4%;
     padding: 25px 15px;
     border: 3.5px solid rgb(69, 207, 207);
@@ -206,31 +214,31 @@ main .forth-block fieldset {
     font-weight: 600;
 }
 
-main .forth-block fieldset legend {
+main .block-with-inputs-and-button fieldset legend {
     color: rgb(69, 207, 207);
     font:800 20px normal;
 }
 
-main .forth-block fieldset .inputs {
+main .block-with-inputs-and-button fieldset .inputs {
     display: flex;
     flex-wrap: wrap;
 }
 
-main .forth-block fieldset .inputs span {
+main .block-with-inputs-and-button fieldset .inputs span {
     display: block;
     width: 60%;
 }
 
-main .forth-block fieldset .inputs input[type="text"] {
+main .block-with-inputs-and-button fieldset .inputs input[type="text"] {
     font-style: italic;
 }
 
-main .forth-block fieldset .inputs label {
+main .block-with-inputs-and-button fieldset .inputs label {
     display: block;
     width: 60%;
 }
 
-main .forth-block fieldset select {
+main .block-with-inputs-and-button fieldset select {
     margin-bottom: 5px;
     padding: 10px;
     display: block;
@@ -238,7 +246,7 @@ main .forth-block fieldset select {
     border-radius: 10px;
 }
 
-main .forth-block fieldset input[type="text"] {
+main .block-with-inputs-and-button fieldset input[type="text"] {
     display: block;
     border-radius: 10px;
     border: 0.25px solid black;
@@ -246,7 +254,7 @@ main .forth-block fieldset input[type="text"] {
     height: 27px;
 }
 
-main .forth-block input[type="button"] {
+main .block-with-inputs-and-button input[type="button"] {
     padding: 10px 25px;
     display: block;
     font-size: 20px;
@@ -256,15 +264,15 @@ main .forth-block input[type="button"] {
     border: 0.5px solid rgb(69, 207, 207);
 }
 
-main .forth-block input[type="button"]:hover {
+main .block-with-inputs-and-button input[type="button"]:hover {
     background-color: rgb(69, 207, 207);
     color: white;
     cursor: pointer;
 }
 
-/*Footer*/
+/*Footer-bottom-of-page*/
 
-footer {
+footer.bottom-of-page {
     margin-top: 8%;
     padding: 60px 210px;
     display: flex;
@@ -275,26 +283,26 @@ footer {
     font-weight: 600;
 }
 
-footer .column {
+footer.bottom-of-page .column {
     flex: 0 1 20%;
 }
 
-footer .column span.moon-and-logo {
+footer.bottom-of-page .column span.moon-and-logo {
     display: flex;
     align-items: center;
 }
 
-footer .column span.Moon-near-logo {
+footer.bottom-of-page .column span.Moon-near-logo {
     display: inline-block;
 }
 
-footer .column span.copy {
+footer.bottom-of-page .column span.copy {
     font-weight: 400;
 }
 
 /*first column*/
 
-footer .first-column img {
+footer.bottom-of-page .first-column img {
     display: inline-block;
     height: 40px;
     margin-right: 15px;
