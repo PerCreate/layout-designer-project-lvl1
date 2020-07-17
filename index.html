@@ -10,14 +10,14 @@
 </head>
 
 <body>
-    <header class="fixed-menu">
+    <header class="fixed-header top-of-page fl-c fw-600">
         <!--header-->
             <!--logo-->
             <div class="logo"><img src="images/logo.svg" alt="logo"> Лунное море
             </div>
             <!--menu-->
             <nav>
-                <ul>
+                <ul class="fl-c">
                     <li><a href="#blocks-benefits">Преимущества</a></li>
                     <li><a href="#block-two-benefits-with-pictures1">О ЖК</a></li>
                     <li><a href="#block-two-benefits-with-pictures2">Места для отдыха</a></li>
@@ -27,28 +27,28 @@
     <main>
         <!--main-->
         <!-- block with moon bg-->
-        <div class="block-with-moon-bg">
+        <div class="block-with-moon-bg fl-c fw-600 ln-h-30">
             <span><img src="images/logo.svg" alt="logo"></span>
             <h1> ЖК &laquo;Лунное море&raquo;</h1>
             <span>Место, откуда не хочется улетать</span>
-            <a href="#block-with-inputs-and-button">Забронировать</a>
+            <a class="btn fs-16" href="#block-with-inputs-and-button">Забронировать</a>
         </div>
         <!--block-with-three-inline-benefits-->
-        <div class="block-with-three-inline-benefits">
-            <div class="blocks-benefits" id="blocks-benefits">
-                <h2>Уникальный вид</h2>
+        <div class="block-with-three-inline-benefits bg-col">
+            <div class="blocks-benefits ln-h-30" id="blocks-benefits">
+                <h2 class="fs-30">Уникальный вид</h2>
                 <span>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться
                     метеоритными потоками.</span>
             </div>
-            <div class="blocks-benefits">
-                <h2>Инфраструктура</h2>
+            <div class="blocks-benefits ln-h-30">
+                <h2 class="fs-30">Инфраструктура</h2>
 
                 <span>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится
                     кольцо
                     гор Кордильеры, на которых вы сможете провести незабываемые выходные.</span>
             </div>
-            <div class="blocks-benefits">
-                <h2>Близость к Москве</h2>
+            <div class="blocks-benefits ln-h-30">
+                <h2 class="fs-30">Близость к Москве</h2>
 
                 <span>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце
                     России.</span>
@@ -58,8 +58,8 @@
         <div class="block-two-benefits-with-pictures" id="block-two-benefits-with-pictures1">
 
             <img class="first" src="images/moon-1.jpg" alt="logo">
-            <h2>О ЖК «Лунное море»</h2>
-            <span class="first">
+            <h2 class="fs-30">О ЖК «Лунное море»</h2>
+            <span class="first ln-h-30">
                 Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не
                 теряется
                 – современные скоростные трассы позволяют без труда добираться до столицы и обратно.
@@ -68,8 +68,8 @@
         </div>
         <div class="block-two-benefits-with-pictures" id="block-two-benefits-with-pictures2">
             <img class="second" src="images/moon-2.jpg" alt="moon">
-            <h2>Места для отдыха</h2>
-            <span class="second">
+            <h2 class="fs-30">Места для отдыха</h2>
+            <span class="second ln-h-30">
                 
                 Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и
                 18 гор.
@@ -81,12 +81,12 @@
             
         </div>
         <!--Block with inputs and button-->
-        <div class="block-with-inputs-and-button" id="block-with-inputs-and-button">
-            <h2>Оставьте заявку сегодня!</h2>
+        <div class="block-with-inputs-and-button bg-col" id="block-with-inputs-and-button">
+            <h2 class="fs-30">Оставьте заявку сегодня!</h2>
             <!--first section of block-with-inputs-and-button-->
-            <fieldset>
+            <fieldset class="fw-600 fs-16">
                 <legend>Параметры квартиры</legend>
-                <div class="block-with-seceltor">
+                <div class="block-with-seceltor fl-w">
                     <span>Количество комнат:</span>
                     <select size="1">
                         <option value="1">1</option>
@@ -102,9 +102,9 @@
                 </div>
             </fieldset>
             <!--second section of block-with-inputs-and-button-->
-            <fieldset>
+            <fieldset class="fw-600 fs-16">
                 <legend>Контактная информация</legend>
-                <div class="inputs">
+                <div class="inputs fl-w">
                     <label for="UserName">Имя:</label>
                     <input type="text" id="UserName" placeholder="Максим">
                     
@@ -117,11 +117,11 @@
                 </div>
             </fieldset>
             <!--Input value=button-->
-            <input type="button" value="Отправить">
+            <input class="btn" type="button" value="Отправить">
         </div>
     </main>
     <!--Footer-bottom-of-page-->
-    <footer class="bottom-of-page">
+    <footer class="bottom-of-page fl-c fw-600">
         <!--first column-->
         <div class="first-column column">
             <span class="moon-and-logo">
@@ -131,7 +131,7 @@
             <span class="copy">&copy; 2032 год</span>
         </div>
         <!--second column-->
-        <div class="second-column column">
+        <div class="second-column column ln-h-30">
             <h3>Проектная документация</h3>
             <ul>
                 <li>Скачать</li>
@@ -139,7 +139,7 @@
             </ul>
         </div>
         <!--third column-->
-        <div class="third-column column">
+        <div class="third-column column ln-h-30">
             <h3>О застройщике</h3>
             <ul>
                 <li>Отзывы</li>
