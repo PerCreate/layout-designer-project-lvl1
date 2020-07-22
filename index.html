@@ -10,31 +10,32 @@
 </head>
 
 <body>
-    <header class="fixed-header top-of-page fl-c fw-600">
+    <header class="fixed-header top-of-page fl-jcs-aic fw-600">
         <!--header-->
-            <!--logo-->
-            <div class="logo fl-c"><img src="images/logo.svg" alt="logo"> Лунное море
-            </div>
-            <!--menu-->
-            <nav>
-                <ul class="fl-c">
-                    <li><a href="#blocks-benefits">Преимущества</a></li>
-                    <li><a href="#block-two-benefits-with-pictures1">О ЖК</a></li>
-                    <li><a href="#block-two-benefits-with-pictures2">Места для отдыха</a></li>
-                </ul>
-            </nav>
+        <!--logo-->
+        <div class="logo fl-jcs-aic"><img src="images/logo.svg" alt="logo"> Лунное море
+        </div>
+        <!--menu-->
+        <nav>
+            <ul class="fl-jcs-aic">
+                <li><a href="#blocks-benefits">Преимущества</a></li>
+                <li><a href="#block-two-benefits-with-pictures1">О ЖК</a></li>
+                <li><a href="#block-two-benefits-with-pictures2">Места для отдыха</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <!--main-->
         <!-- block with moon bg-->
-        <div class="block-with-moon-bg fl-c fw-600 ln-h-30">
+        <div class="block-with-moon-bg fl-jcs-aic fw-600 ln-h-30">
             <span><img src="images/logo.svg" alt="logo"></span>
             <h1 class="fs-45"> ЖК &laquo;Лунное море&raquo;</h1>
             <span>Место, откуда не хочется улетать</span>
             <a class="btn  btn-type-white-grey fs-16" href="#block-with-inputs-and-button">Забронировать</a>
         </div>
         <!--block-with-three-inline-benefits-->
-        <div class="block-with-three-inline-benefits bg-col">
+        <div class="block-with-three-inline-benefits fl-jcc">
+            <div class="bg bg-col fl-jcc">
             <div class="blocks-benefits ln-h-30" id="blocks-benefits">
                 <h2 class="fs-30">Уникальный вид</h2>
                 <span>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться
@@ -54,31 +55,37 @@
                     России.</span>
             </div>
         </div>
-        <!--Block two benefits with pictures-->
-        <div class="block-two-benefits-with-pictures" id="block-two-benefits-with-pictures1">
-
-            <img class="first" src="images/moon-1.jpg" alt="logo">
-            <h2 class="fs-30">О ЖК «Лунное море»</h2>
-            <span class="first ln-h-30">
-                Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не
-                теряется
-                – современные скоростные трассы позволяют без труда добираться до столицы и обратно.
-
-                Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</span>
         </div>
-        <div class="block-two-benefits-with-pictures" id="block-two-benefits-with-pictures2">
-            <img class="second" src="images/moon-2.jpg" alt="moon">
-            <h2 class="fs-30">Места для отдыха</h2>
-            <span class="second ln-h-30">
-                
-                Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и
-                18 гор.
-                Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.
+        <!--Block two benefits with pictures-->
+        <div class="block-two-benefits-with-pictures fl-w" id="block-two-benefits-with-pictures1">
+            <div class="section-of-benefits-with-pictures">
+                <img class="first" src="images/moon-1.jpg" alt="logo">
+                <h2 class="fs-30">О ЖК «Лунное море»</h2>
+                <span class="first ln-h-30">
+                    Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом
+                    не
+                    теряется
+                    – современные скоростные трассы позволяют без труда добираться до столицы и обратно.
 
-                Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный
-                материк».
-            </span>
-            
+                    Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от
+                    Земли.</span>
+            </div>
+        </div>
+        <div class="block-two-benefits-with-pictures fl-w" id="block-two-benefits-with-pictures2">
+            <div class="section-of-benefits-with-pictures">
+                <img class="second" src="images/moon-2.jpg" alt="moon">
+                <h2 class="fs-30">Места для отдыха</h2>
+                <span class="second ln-h-30">
+
+                    Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22
+                    моря и
+                    18 гор.
+                    Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.
+
+                    Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный
+                    материк».
+                </span>
+            </div>
         </div>
         <!--Block with inputs and button-->
         <div class="block-with-inputs-and-button bg-col" id="block-with-inputs-and-button">
@@ -107,13 +114,13 @@
                 <div class="inputs fl-w">
                     <label for="UserName">Имя:</label>
                     <input type="text" id="UserName" placeholder="Максим">
-                    
-                    <label for="UserNumber" >Телефон:</label>
+
+                    <label for="UserNumber">Телефон:</label>
                     <input type="text" id="UserNumber" placeholder="89174947036">
-                    
+
                     <label for="UserEmail">E-mail:</label>
                     <input type="text" id="UserEmail" placeholder="max@mail.ru">
-                    
+
                 </div>
             </fieldset>
             <!--Input value=button-->
@@ -121,32 +128,34 @@
         </div>
     </main>
     <!--Footer-bottom-of-page-->
-    <footer class="bottom-of-page fl-c fw-600">
+    <footer class="bottom-of-page fl-jcs-aic fw-600">
         <!--first column-->
-        <div class="first-column column">
-            <span class="moon-and-logo">
-                <img src="images/logo.svg" alt="moon">
-
-                <span class="Moon-near-logo">Лунное море</span></span><br><br>
-            <span class="copy">&copy; 2032 год</span>
-        </div>
-        <!--second column-->
-        <div class="second-column column ln-h-30">
-            <h3>Проектная документация</h3>
-            <ul>
-                <li>Скачать</li>
-                <li>Посмотреть на сайте</li>
-            </ul>
-        </div>
-        <!--third column-->
-        <div class="third-column column ln-h-30">
-            <h3>О застройщике</h3>
-            <ul>
-                <li>Отзывы</li>
-                <li>Сайт компании</li>
-            </ul>
-        </div>
+        
+            <div class="first-column column">
+                <span class="moon-and-logo">
+                    <img src="images/logo.svg" alt="moon">
+    
+                    <span class="Moon-near-logo fs-16">Лунное море</span></span><br><br>
+                <span class="copy">&copy; 2032 год</span>
+            </div>
+            <!--second column-->
+            <div class="second-column column ln-h-30">
+                <h3>Проектная документация</h3>
+                <ul>
+                    <li>Скачать</li>
+                    <li>Посмотреть на сайте</li>
+                </ul>
+            </div>
+            <!--third column-->
+            <div class="third-column column ln-h-30">
+                <h3>О застройщике</h3>
+                <ul>
+                    <li>Отзывы</li>
+                    <li>Сайт компании</li>
+                </ul>
+            </div>
+        
     </footer>
-</body>
-
-</html>
+    </body>
+    
+    </html>

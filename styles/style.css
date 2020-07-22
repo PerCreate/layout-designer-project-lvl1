@@ -37,11 +37,17 @@ body {
     flex-wrap: wrap;
 }
 
-.fl-c {
+.fl-jcs-aic {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.fl-jcc {
+    display: flex;
+    justify-content: center;
+}
+
 .fw-600 {
     font-weight: 600;
 }
@@ -140,39 +146,35 @@ main {
 /*Block with three inline benefits*/
 
 .block-with-three-inline-benefits {
-    margin:100px 0 0 0;
-    padding: 0 40px;
-    display: flex;
+    width: 100%;
+    margin:80px 0 0 0;
+}
+
+.bg {
+    width: 1000px;
 }
 
 .blocks-benefits {
     text-align: left;
-    flex: 0 1 20%;
+    flex: 0 1 33%;
 }
 
-:nth-child(1).blocks-benefits {
-    margin: 0 0 0 440px;
-}
-
-:nth-child(2).blocks-benefits{
-    margin: 0 0 0 15px;
-}
-
-:nth-child(3).blocks-benefits {
-    margin: 0 0 0 15px;
-}
 
 .block-with-three-inline-benefits .blocks-benefits span {
     display: block;
     text-align: left;
-    width: 270px;
+    width: 290px;
 }
 
 /*Block two benefits with pictures*/
 
 .block-two-benefits-with-pictures{
+    margin-top: 150px;
+    justify-content: center;
+}
+
+.section-of-benefits-with-pictures{
     width: 1000px;
-    margin: 150px 500px 0 500px;
 }
 
 .block-two-benefits-with-pictures img.first {
@@ -208,7 +210,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 300px;
+    margin-top: 150px;
 }
 
 .block-with-inputs-and-button h2 {
@@ -265,8 +267,8 @@ main {
 /*Footer-bottom-of-page*/
 
 .bottom-of-page {
-    margin-top: 8%;
-    padding: 60px 210px;
+    margin-top: 80px;
+    padding: 40px 80px;
     background-color: #303846;
     color: white;
 }
