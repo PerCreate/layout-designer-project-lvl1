@@ -12,6 +12,22 @@ body {
     background-size: 1400px;
 }
 
+.w-535 {
+    width: 535px;
+}
+
+.w-270 {
+    width: 270px;
+  }
+  
+.width-content {
+    width: 1000px;
+}
+
+.p-25 {
+    padding: 25px;
+}
+
 .btn { 
     display: block;
     border: 1px solid white;
@@ -130,10 +146,6 @@ main {
     height: 150px;
 }
 
-.block-with-moon-bg span {
-    display: block;
-}
-
 .block-with-moon-bg a {
     margin-top: 10px;
 }
@@ -150,16 +162,6 @@ main {
     margin:80px 0 0 0;
 }
 
-.bg {
-    width: 1000px;
-}
-
-.blocks-benefits {
-    text-align: left;
-    flex: 0 1 33%;
-}
-
-
 .block-with-three-inline-benefits .blocks-benefits span {
     display: block;
     text-align: left;
@@ -171,10 +173,6 @@ main {
 .block-two-benefits-with-pictures{
     margin-top: 150px;
     justify-content: center;
-}
-
-.section-of-benefits-with-pictures{
-    width: 1000px;
 }
 
 .block-two-benefits-with-pictures img.first {
