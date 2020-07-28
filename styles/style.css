@@ -7,25 +7,40 @@ body {
 
 /*common properties*/
 
-.bg-col {
+.bg-gray {
     background-color:#f7f7f7;
-    background-size: 1400px;
 }
 
 .w-535 {
     width: 535px;
 }
 
-.w-270 {
-    width: 270px;
-  }
-  
+.w-290 {
+    width: 290px;
+}
+
 .width-content {
     width: 1000px;
 }
 
+.m-t-10 {
+    margin-top: 10px;
+}
+
 .p-25 {
     padding: 25px;
+}
+
+.p-t-80 {
+    padding-top: 80px;
+}
+
+.p-b-80 {
+    padding-bottom: 80px;
+}
+
+.p-l-110 {
+    padding-left:110px;
 }
 
 .btn { 
@@ -42,10 +57,18 @@ body {
     border: 0.5px solid rgb(69, 207, 207);
 }
 
-.btn-type-white-grey{
+.btn-type-white{
     border: 1px solid white;
     text-decoration: none;
     color: white;
+}
+
+.d-fl {
+    display: flex;
+}
+
+.d-bl {
+    display: block;
 }
 
 .fl-w {
@@ -62,6 +85,12 @@ body {
 .fl-jcc {
     display: flex;
     justify-content: center;
+}
+
+.fl-fdc-aic {
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .fw-600 {
@@ -146,10 +175,6 @@ main {
     height: 150px;
 }
 
-.block-with-moon-bg a {
-    margin-top: 10px;
-}
-
 .block-with-moon-bg a:hover {
     background-color: rgba(110, 124, 124, 0.61);
     transition: 0.2s ;
@@ -157,82 +182,50 @@ main {
 
 /*Block with three inline benefits*/
 
-.block-with-three-inline-benefits {
-    width: 100%;
-    margin:80px 0 0 0;
-}
-
-.block-with-three-inline-benefits .blocks-benefits span {
-    display: block;
-    text-align: left;
-    width: 290px;
-}
-
 /*Block two benefits with pictures*/
 
-.block-two-benefits-with-pictures{
-    margin-top: 150px;
-    justify-content: center;
-}
-
-.block-two-benefits-with-pictures img.first {
+img.first {
     display: block;
     height: 200px;
-    float: right;
 }
 
-.block-two-benefits-with-pictures span.first {
+span.first {
     display: block;
     text-align: left;
-    width: 55%;
+    width: 85%;
 }
 
-.block-two-benefits-with-pictures img.second {
-    margin-right: 100px;
+img.second {
     display: block;
     height: 220px;
-    float:left;
 }
 
-
-.block-two-benefits-with-pictures span.second{
+span.second{
     display: block;
     text-align: left;
-    width: 55%;
-    float: right;
+
 }
 
 /*Block with inputs and button*/
 
-.block-with-inputs-and-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 150px;
-}
-
-.block-with-inputs-and-button h2 {
-    padding: 0 55px;
-}
-
-.block-with-inputs-and-button fieldset {
+fieldset {
     width: 500px;
     margin-bottom: 70px;
     padding: 25px 15px;
     border: 3.5px solid rgb(69, 207, 207);
 }
 
-.block-with-inputs-and-button fieldset legend {
+fieldset legend {
     color: rgb(69, 207, 207);
     font:800 20px normal;
 }
 
-.block-with-inputs-and-button fieldset .block-with-seceltor span {
+fieldset .block-with-seceltor span {
     display: block;
     width: 60%;
 }
 
-.block-with-inputs-and-button fieldset select {
+fieldset select {
     margin-bottom: 5px;
     padding: 10px;
     display: block;
@@ -240,12 +233,12 @@ main {
     border-radius: 10px;
 }
 
-.block-with-inputs-and-button fieldset .inputs label {
+fieldset .inputs label {
     display: block;
     width:35%;
 }
 
-.block-with-inputs-and-button fieldset .inputs input[type="text"] {
+fieldset .inputs input[type="text"] {
     display:inline-block;
     border-radius: 10px;
     border: 0.25px solid black;
@@ -256,7 +249,7 @@ main {
     width: 55%;
 }
 
-.block-with-inputs-and-button input[type="button"]:hover {
+.w-535 input[type="button"]:hover {
     background-color: rgb(69, 207, 207);
     color: white;
     cursor: pointer;
@@ -265,7 +258,6 @@ main {
 /*Footer-bottom-of-page*/
 
 .bottom-of-page {
-    margin-top: 80px;
     padding: 40px 80px;
     background-color: #303846;
     color: white;
