@@ -10,14 +10,14 @@
 </head>
 
 <body>
-    <header class="fixed-header top-of-page fl-jcs-aic fw-600">
+    <header class="fixed-header top-of-page d-fl fl-jcs fl-aic fw-600">
         <!--header-->
         <!--logo-->
-        <div class="logo fl-jcs-aic"><img src="images/logo.svg" alt="logo"> Лунное море
+        <div class="logo d-fl fl-jcs fl-aic"><img src="images/logo.svg" alt="logo"> Лунное море
         </div>
         <!--menu-->
         <nav>
-            <ul class="fl-jcs-aic">
+            <ul class="d-fl fl-jcs fl-aic">
                 <li><a href="#w-330">Преимущества</a></li>
                 <li><a href="#block-two-benefits-with-pictures1">О ЖК</a></li>
                 <li><a href="#block-two-benefits-with-pictures2">Места для отдыха</a></li>
@@ -27,15 +27,14 @@
     <main class="ln-h-30">
         <!--main-->
         <!-- block with moon bg-->
-        <div class="block-with-moon-bg fl-jcs-aic fw-600 ">
+        <div class="block-with-moon-bg d-fl fl-jcs fl-aic fw-600 fl-fdc ">
             <p><img src="images/logo.svg" alt="logo"></p>
             <h1 class="fs-45"> ЖК &laquo;Лунное море&raquo;</h1>
             <span>Место, откуда не хочется улетать</span>
             <a class="btn  btn-type-white fs-16 m-t-10" href="#block-with-inputs-and-button">Забронировать</a>
         </div>
         <!--block-with-three-inline-benefits-->
-        <div class="fl-jcc ">
-            <div class="width-content fl-jcc">
+            <div class="width-content fl-jcc d-fl">
                 <div class="w-290 p-25 p-t-80 p-b-80  " id="w-330">
                     <h2 class="fs-30">Уникальный вид</h2>
                     <span>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться
@@ -56,9 +55,8 @@
                         России.</span>
                 </div>
             </div>
-        </div>
         <!--Block two benefits with pictures-->
-        <div class="fl-jcc fl-w bg-gray" id="block-two-benefits-with-pictures1 ">
+        <div class="fl-jcc fl-w d-fl bg-gray " id="block-two-benefits-with-pictures1">
             <div class="width-content p-t-80 p-b-80 d-fl ">
                 <div>
                     <h2 class="fs-30">О ЖК «Лунное море»</h2>
@@ -77,7 +75,7 @@
                 </div>
             </div>
         </div>
-        <div class="fl-jcc fl-w" id="block-two-benefits-with-pictures2">
+        <div class="fl-jcc fl-w d-fl" id="block-two-benefits-with-pictures2">
             <div class="width-content p-t-80 p-b-80 d-fl">
                 <div class="d-bl w-535"><img class="second" src="images/moon-2.jpg" alt="moon"></div>
                 <div class="p-l-110">
@@ -97,49 +95,51 @@
             </div>
         </div>
         <!--Block with inputs and button-->
-        <div class="fl-fdc-aic bg-gray p-t-80 p-b-80" id="block-with-inputs-and-button">
-            <h2 class="fs-30">Оставьте заявку сегодня!</h2>
-            <!--first section of block-with-inputs-and-button-->
-            <fieldset class="fw-600 fs-16">
-                <legend>Параметры квартиры</legend>
-                <div class="block-with-seceltor fl-w">
-                    <span>Количество комнат:</span>
-                    <select size="1">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                    <span>Отделка:</span>
-                    <select size="1">
-                        <option value="Без отделки">Без отделки</option>
-                        <option value="С отделкой">С отделкой</option>
-                        <option value="Обои">Обои</option>
-                    </select>
+        <form>
+            <div class="fl-fdc fl-aic d-fl bg-gray p-t-80 p-b-80" id="block-with-inputs-and-button">
+                <h2 class="fs-30">Оставьте заявку сегодня!</h2>
+                <!--first section of block-with-inputs-and-button-->
+                <fieldset class="fw-600 fs-16">
+                    <legend>Параметры квартиры</legend>
+                    <div class="block-with-seceltor fl-w d-fl">
+                        <span>Количество комнат:</span>
+                        <select size="1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <span>Отделка:</span>
+                        <select size="1">
+                            <option value="Без отделки">Без отделки</option>
+                            <option value="С отделкой">С отделкой</option>
+                            <option value="Обои">Обои</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <!--second section of block-with-inputs-and-button-->
+                <fieldset class="fw-600 fs-16">
+                    <legend>Контактная информация</legend>
+                    <div class="inputs fl-w d-fl">
+                        <label for="UserName">Имя:</label>
+                        <input type="text" id="UserName" placeholder="Максим">
+
+                        <label for="UserNumber">Телефон:</label>
+                        <input type="text" id="UserNumber" placeholder="89174947036">
+
+                        <label for="UserEmail">E-mail:</label>
+                        <input type="text" id="UserEmail" placeholder="max@mail.ru">
+
+                    </div>
+                </fieldset>
+                <!--Input value=button-->
+                <div class="w-535">
+                    <input class="btn btn-type-white-blue" type="button" value="Отправить">
                 </div>
-            </fieldset>
-            <!--second section of block-with-inputs-and-button-->
-            <fieldset class="fw-600 fs-16">
-                <legend>Контактная информация</legend>
-                <div class="inputs fl-w">
-                    <label for="UserName">Имя:</label>
-                    <input type="text" id="UserName" placeholder="Максим">
-
-                    <label for="UserNumber">Телефон:</label>
-                    <input type="text" id="UserNumber" placeholder="89174947036">
-
-                    <label for="UserEmail">E-mail:</label>
-                    <input type="text" id="UserEmail" placeholder="max@mail.ru">
-
-                </div>
-            </fieldset>
-            <!--Input value=button-->
-            <div class="w-535">
-                <input class="btn btn-type-white-blue" type="button" value="Отправить">
             </div>
-        </div>
+        </form>
     </main>
     <!--Footer-bottom-of-page-->
-    <footer class="bottom-of-page fl-jcs-aic fw-600">
+    <footer class="bottom-of-page d-fl fl-jcs fl-aic fw-600">
         <!--first column-->
 
         <div class="first-column column">
