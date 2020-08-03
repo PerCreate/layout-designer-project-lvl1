@@ -2,7 +2,7 @@
 
 :root {
     --height:55px;
-    --light-color:#f7f7f7;
+    --light-color:red;
     --dark-color:#303846;
 }
 
@@ -120,9 +120,17 @@ flex-direction: column;
     line-height: 30px;
 }
 
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 30px;
+}
 /*Header*/
 
 .top-of-page {
+    box-sizing: border-box;
     width: 100%;
     height: var(--height);
     padding: 5px 10px;
@@ -190,48 +198,42 @@ main {
 
 /*Block two benefits with pictures*/
 
-img.first {
+.inline-img {
     display: block;
-    height: 200px;
+    height: 220px;
 }
 
-span.first {
+.first-paragraph {
     display: block;
     text-align: left;
     width: 85%;
 }
 
-img.second {
-    display: block;
-    height: 220px;
-}
-
-span.second{
+.second-paragraph{
     display: block;
     text-align: left;
-
 }
 
 /*Block with inputs and button*/
 
-fieldset {
+.user-info {
     width: 500px;
     margin-bottom: 70px;
     padding: 25px 15px;
     border: 3.5px solid rgb(69, 207, 207);
 }
 
-fieldset legend {
+.user-info legend {
     color: rgb(69, 207, 207);
     font:800 20px normal;
 }
 
-fieldset .block-with-seceltor span {
+.user-info .block-with-seceltor span {
     display: block;
     width: 60%;
 }
 
-fieldset select {
+.user-info select {
     margin-bottom: 5px;
     padding: 10px;
     display: block;
@@ -239,12 +241,12 @@ fieldset select {
     border-radius: 10px;
 }
 
-fieldset .inputs label {
+.user-info .inputs label {
     display: block;
     width:35%;
 }
 
-fieldset .inputs input[type="text"] {
+.user-info .inputs input[type="text"] {
     display:inline-block;
     border-radius: 10px;
     border: 0.25px solid black;
@@ -255,7 +257,7 @@ fieldset .inputs input[type="text"] {
     width: 55%;
 }
 
-.w-535 input[type="button"]:hover {
+input[type="button"]:hover.send {
     background-color: rgb(69, 207, 207);
     color: white;
     cursor: pointer;
