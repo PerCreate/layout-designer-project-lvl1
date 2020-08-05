@@ -2,8 +2,11 @@
 
 :root {
     --height:55px;
-    --light-color:red;
+    --light-color:#f7f7f7;
     --dark-color:#303846;
+    --text-light: white;
+    --text-dark:black;
+    --light-blue:rgb(69, 207, 207);
 }
 
 body {
@@ -24,6 +27,10 @@ body {
 
 .w-290 {
     width: 290px;
+}
+
+.w-140 {
+    width: 140px;
 }
 
 .width-content {
@@ -62,14 +69,14 @@ body {
 }
 
 .btn-type-white-blue {
-    color: rgb(69, 207, 207);
-    border: 0.5px solid rgb(69, 207, 207);
+    color: var(--light-blue);
+    border: 0.5px solid var(--light-blue);
 }
 
 .btn-type-white{
     border: 1px solid white;
     text-decoration: none;
-    color: white;
+    color: var(--text-light);
 }
 
 .d-fl {
@@ -78,6 +85,10 @@ body {
 
 .d-bl {
     display: block;
+}
+
+.d-in-bl {
+    display: inline-block;
 }
 
 .fl-w {
@@ -96,12 +107,24 @@ body {
     justify-content: center;
 }
 
-.fl-fdc {
+.fl-jcfs {
+    justify-content: flex-start;
+}
+
+.fl-dc {
 flex-direction: column;
+}
+
+.fl-aifs {
+    align-items: flex-start;
 }
 
 .fw-600 {
     font-weight: 600;
+}
+
+.fw-400 {
+    font-weight: 400;
 }
 
 .fs-45 {
@@ -134,7 +157,7 @@ h2 {
     width: 100%;
     height: var(--height);
     padding: 5px 10px;
-    background-color: white;
+    background-color: var(--text-light);
 }
 
 .fixed-header {
@@ -150,11 +173,6 @@ header img {
 
 /*Logo*/
 
-.logo  {
-    width: 140px;
-}
-
-
 nav ul {
     padding: 0 20px 0 20px;
     width: 360px;
@@ -167,7 +185,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--text-dark);
 }
 
 /*Main */
@@ -178,7 +196,7 @@ main {
 /*Block with moon bg*/
 
 .block-with-moon-bg {
-    color: white;
+    color: var(--text-light);
     padding:30px ;
     background-image: url(../images/banner.png) ;
     background-position: left 5% top 55% ;
@@ -190,7 +208,7 @@ main {
 }
 
 .block-with-moon-bg a:hover {
-    background-color: rgba(110, 124, 124, 0.61);
+    background-color: var(--dark-color);
     transition: 0.2s ;
 }
 
@@ -199,18 +217,15 @@ main {
 /*Block two benefits with pictures*/
 
 .inline-img {
-    display: block;
     height: 220px;
 }
 
 .first-paragraph {
-    display: block;
     text-align: left;
     width: 85%;
 }
 
 .second-paragraph{
-    display: block;
     text-align: left;
 }
 
@@ -220,34 +235,30 @@ main {
     width: 500px;
     margin-bottom: 70px;
     padding: 25px 15px;
-    border: 3.5px solid rgb(69, 207, 207);
+    border: 3.5px solid var(--light-blue);
 }
 
 .user-info legend {
-    color: rgb(69, 207, 207);
+    color: var(--light-blue);
     font:800 20px normal;
 }
 
 .user-info .block-with-seceltor span {
-    display: block;
     width: 60%;
 }
 
 .user-info select {
     margin-bottom: 5px;
     padding: 10px;
-    display: block;
     width: 30%;
     border-radius: 10px;
 }
 
 .user-info .inputs label {
-    display: block;
     width:35%;
 }
 
 .user-info .inputs input[type="text"] {
-    display:inline-block;
     border-radius: 10px;
     border: 0.25px solid black;
     margin-bottom: 15px;
@@ -258,7 +269,7 @@ main {
 }
 
 input[type="button"]:hover.send {
-    background-color: rgb(69, 207, 207);
+    background-color: var(--light-blue);
     color: white;
     cursor: pointer;
 }
@@ -268,30 +279,16 @@ input[type="button"]:hover.send {
 .bottom-of-page {
     padding: 40px 80px;
     background-color:var(--dark-color);
-    color: white;
+    color: var(--text-light);
 }
 
-.bottom-of-page .column {
-    flex: 0 1 20%;
-}
-
-.bottom-of-page .column span.moon-and-logo {
-    display: flex;
-    align-items: center;
-}
-
-.bottom-of-page .column span.Moon-near-logo {
-    display: inline-block;
-}
-
-.bottom-of-page .column span.copy {
-    font-weight: 400;
+.column {
+    flex: 0 1 33%;
 }
 
 /*first column*/
 
-.bottom-of-page .first-column img {
-    display: inline-block;
+.moon-and-logo img {
     height: 40px;
     margin-right: 15px;
 }
