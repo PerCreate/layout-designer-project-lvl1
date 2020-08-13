@@ -21,6 +21,14 @@ body {
     background-color:var(--light-color);
 }
 
+.w-content {
+    width: max-content;
+}
+
+.w-60per {
+    width: 60%;
+}
+
 .w-535 {
     width: 535px;
 }
@@ -31,6 +39,10 @@ body {
 
 .w-140 {
     width: 140px;
+}
+
+.h-27 {
+    height: 27px;
 }
 
 .width-content {
@@ -91,19 +103,19 @@ body {
     display: inline-block;
 }
 
-.fl-w {
+.fl-wrap {
     flex-wrap: wrap;
 }
 
-.fl-jcs {
+.fl-justify-between {
     justify-content: space-between;
 }
 
-.fl-aic {
+.fl-align-center {
     align-items: center;
 }
 
-.fl-jcc {
+.fl-justify-center {
     justify-content: center;
 }
 
@@ -111,11 +123,11 @@ body {
     justify-content: flex-start;
 }
 
-.fl-dc {
-flex-direction: column;
+.fl-direction {
+    flex-direction: column;
 }
 
-.fl-aifs {
+.fl-align-start {
     align-items: flex-start;
 }
 
@@ -196,6 +208,7 @@ main {
 /*Block with moon bg*/
 
 .block-with-moon-bg {
+    width: 100%;
     color: var(--text-light);
     padding:30px ;
     background-image: url(../images/banner.png) ;
@@ -243,10 +256,6 @@ main {
     font:800 20px normal;
 }
 
-.user-info .block-with-seceltor span {
-    width: 60%;
-}
-
 .user-info select {
     margin-bottom: 5px;
     padding: 10px;
@@ -258,17 +267,13 @@ main {
     width:35%;
 }
 
-.user-info .inputs input[type="text"] {
+.input-info {
     border-radius: 10px;
     border: 0.25px solid black;
-    margin-bottom: 15px;
-    margin-top: -7.5px;
-    height: 27px;
-    font-style: italic;
-    width: 55%;
+    margin-bottom: 7.5px;
 }
 
-input[type="button"]:hover.send {
+.send:hover {
     background-color: var(--light-blue);
     color: white;
     cursor: pointer;
