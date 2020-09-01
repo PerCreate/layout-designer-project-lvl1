@@ -9,17 +9,6 @@
     --light-blue:rgb(69, 207, 207);
 }
 
-@media (max-width: 1000px) {
-    .width-content {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .w-290 {
-        width: 100%;
-    }
-}
-
 body {
     width: 100%;
     margin: 0;
@@ -113,6 +102,14 @@ body {
     color: var(--text-light);
 }
 
+.pos-rel {
+    position: relative;
+}
+
+.z-ind-1 {
+    z-index: 1;
+}
+
 .d-fl {
     display: flex;
 }
@@ -200,6 +197,7 @@ h2 {
 
 .fixed-header {
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
 }
@@ -235,10 +233,19 @@ main {
 
 .block-with-moon-bg {
     color: var(--text-light);
-    padding:30px ;
+    padding: 30px 0 ;
     background-image: url(../images/banner.png) ;
     background-position: left 5% top 55% ;
     background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.menu-gamburger {
+    display: none;
+}
+
+.check-menu {
+    display: none;
 }
 
 .block-with-moon-bg img {
@@ -318,7 +325,7 @@ main {
 
 /*first column*/
 
-.moon-and-logo img {
+.footer-moon {
     height: 40px;
     margin-right: 15px;
 }
